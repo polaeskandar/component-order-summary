@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, #818cf8, #6366f1, #4f46e5);
+  background-repeat: no-repeat;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.order-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  width: 45%;
+  background-color: #eef2ff;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.order-summary .order-image {
+  background-image: url(./img/order.jpg);
+  height: 450px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+.order-summary .order-title {
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #374151;
+}
+
+.order-summary .order-text {
+  text-align: center;
+  width: 70%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.order-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+.order-items .order-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: #c7d2fe;
+  border-radius: 4px;
+}
+
+.order-items .order-item .item-details {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.order-items .order-item .item-details .item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #eef2ff;
+  width: 30px;
+  height: 30px;
+}
+
+.order-items .order-item .change-item {
+  background: #eef2ff;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 4px;
+  color: #4338ca;
+}
+
+.order-items .order-item .change-item:hover {
+  color: rgba(68, 56, 202, 0.8);
+}
+
+.next-btn {
+  background-color: #4338ca;
+  color: #fff;
+  padding: 20px;
+  width: 70%;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.next-btn:hover {
+  background-color: rgba(67, 56, 202, 0.9);
+}
+
+.cancel-btn {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+  color: #4b5563;
+  background: transparent;
+  border: none;
+  width: 70%;
+  margin-bottom: 40px;
+}
+
+.cancel-btn:hover {
+  color: #1f2937;
+}
